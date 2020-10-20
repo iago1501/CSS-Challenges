@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #3faf82;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hamburguer {
+  cursor: pointer;
+  width: 80px;
+  height: 52px;
+}
+
+.bar {
+  background: #fff;
+  height: 8px;
+  margin: 10px auto;
+  border-radius: 3px;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.bar-1 {
+  top: 0px;
+  position: absolute;
+  animation: rotateBar1 6s infinite;
+}
+
+.bar-2 {
+  animation: resizeBar2 6s infinite;
+}
+
+.bar-3 {
+  top: 15px;
+  position: absolute;
+  animation: rotateBar3 6s infinite;
+}
+
+@keyframes rotateBar1 {
+  0% {
+    margin-top: -8px;
+    transform: rotate(0deg);
+  }
+  25% {
+    margin-top: 12px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-top: 12px;
+    transform: rotate(40deg);
+  }
+  75% {
+    margin-top: 12px;
+    transform: rotate(0deg);
+  }
+  100% {
+    margin-top: -8px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes resizeBar2 {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0px;
+  }
+  75% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes rotateBar3 {
+  0% {
+    margin-top: 15px;
+    transform: rotate(0deg);
+  }
+  25% {
+    margin-top: -5px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-top: -5px;
+    transform: rotate(-40deg);
+  }
+  75% {
+    margin-top: -5px;
+    transform: rotate(0deg);
+  }
+  100% {
+    margin-top: 15px;
+    transform: rotate(0deg);
+  }
+}
